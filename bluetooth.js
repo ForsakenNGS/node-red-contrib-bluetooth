@@ -54,11 +54,11 @@ module.exports = function(RED) {
         });
 
         this.on('failure', function(error) {
-          console.log("Bluetooth read error: " + error);
+            console.log("Bluetooth read error: " + error);
         });
 
         this.on('close', function() {
         });
     }
-    RED.nodes.registerType("bluetooth", WriteBTSerial);
+    RED.nodes.registerType("bluetooth-adv", WriteBTSerial);
 }
