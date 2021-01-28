@@ -1,7 +1,7 @@
 {
-  "name": "node-red-contrib-bluetooth",
-  "version": "0.0.6",
-  "description": "A Node-RED node for sending messages over Bluetooth Classic serial",
+  "name": "node-red-contrib-bluetooth-advanced",
+  "version": "0.0.7",
+  "description": "A Node-RED node for sending messages over Bluetooth Classic serial. (Forked from banada with added debugging and error handling)",
   "dependencies": {
     "bluetooth-serial-port": "*"
   },
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/banada/node-red-contrib-bluetooth"
+    "url": "https://github.com/ForsakenNGS/node-red-contrib-bluetooth"
   },
   "keywords": [
     "node-red",
@@ -26,9 +26,9 @@
       "bluetooth": "bluetooth.js"
     }
   },
-  "author": "Nathaniel Chen <nathanielchen1@gmail.com>",
+  "author": "Jens N <jens.n@godlike.biz>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/banada/node-red-contrib-bluetooth/issues"
+    "url": "https://github.com/ForsakenNGS/node-red-contrib-bluetooth/issues"
   }
 }
