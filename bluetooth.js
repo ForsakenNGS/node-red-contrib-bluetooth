@@ -32,8 +32,12 @@ module.exports = function(RED) {
                                     break;
                                 }
                             }
-                        }); 
+                        });
+                    }, function(error) {
+                        console.log("Bluetooth connect error: " + error);
                     });
+                }, function(error) {
+                    console.log("Bluetooth findSerialPortChannel error: " + error);
                 });
             } else {
                 var buffer = new Buffer(msg.payload);
@@ -47,6 +51,10 @@ module.exports = function(RED) {
                     }
                 });
             }
+        });
+
+        this.on('failure', function(error) {
+          console.log("Bluetooth read error: " + error);
         });
 
         this.on('close', function() {
